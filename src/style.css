@@ -72,12 +72,14 @@ header .title {
 
 .nav .selected {
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #00D198;
 }
 
+/*
 .nav li:hover {
   border-bottom: 2px solid darkgrey;
 }
+*/
 
 main {
   text-align: center;
@@ -102,6 +104,19 @@ footer {
   font-size: 0.75em;
 }
 
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  margin: 1px;
+}
+
+.social-media-icons {
+  top: 65px;
+  position: absolute;
+  left: 17.4%;
+}
+
 @media (max-width: 768px) {
 
   .title, .nav {
@@ -118,5 +133,9 @@ footer {
 
   footer {
     position: static;
+  }
+
+  .social-media-icons {
+    display: none;
   }
 }
