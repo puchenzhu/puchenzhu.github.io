@@ -1,3 +1,3 @@
-window.addEventListener("load", function () {
+$(document).ready(function () {
   $(document.body).fadeIn(800);
 });
