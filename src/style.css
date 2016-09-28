@@ -1,0 +1,122 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", Helvetica;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  display: none;
+}
+
+.background-image {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../data/background-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-filter: opacity(10%) grayscale(100%) ;
+}
+
+a {
+  color: inherit;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+header,
+main,
+footer {
+  max-width: 65%;
+  margin: auto;
+}
+
+header {
+  padding-top: 10px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+header .title {
+  font-size: 1.5em;
+}
+
+.nav {
+  list-style-type: none;
+  padding-left: 0;
+  float: right;
+}
+
+.nav li {
+  color: darkgrey;
+  margin: auto 10px;
+  padding: 10px 0;
+}
+
+.nav .selected {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.nav li:hover {
+  border-bottom: 2px solid darkgrey;
+}
+
+main {
+  text-align: center;
+  font-size: 1.25em;
+  position: absolute;
+  top: 45vh;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.copyright {
+  color: darkgrey;
+  font-size: 0.75em;
+}
+
+@media (max-width: 1000px) {
+
+  .title, .nav {
+    text-align: center;
+    display: block;
+    float: none;
+  }
+
+  main {
+    position: static;
+    transform: none;
+    margin: 50px auto;
+  }
+
+  footer {
+    position: static;
+  }
+}
