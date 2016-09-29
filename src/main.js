@@ -18,4 +18,35 @@ $(document).ready(function () {
     if (!item.hasClass("selected"))
       item.css("border-bottom", "none");
   });
+
+  let currentItem = 0;
+  const showcase = [
+    {
+      title: "Hello, world!",
+      details01: "This is some text. Blah, blah, blah.",
+      details02: "Ok, I'm bored.",
+    },
+    {
+      title: "Goodbye, world!",
+      details01: "This is some different text. Yada, yada, yada.",
+      details02: "Well, I'm still bored.",
+    },
+  ];
+
+
+  setInterval(function () {
+    currentItem = (currentItem + 1) % showcase.length;
+    $("#main-title").fadeOut(function () {
+      $(this).html(showcase[currentItem].title);
+      $(this).fadeIn();
+      $("#main-details-01").fadeOut(function () {
+        $(this).html(showcase[currentItem].details01);
+        $(this).fadeIn();
+        $("#main-details-02").fadeOut(function () {
+          $(this).html(showcase[currentItem].details02);
+          $(this).fadeIn();
+        });
+      });
+    });
+  }, 5000);
 });
