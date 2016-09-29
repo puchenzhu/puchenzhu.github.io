@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.75">
-  <title>puchenzhu</title>
+  <title>Puchen Zhu</title>
   <!-- fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
   <!-- styles -->
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  <div id="background-image" class="background-image"></div>
+  <div class="body-background-image"></div>
   <header>
-    <h2 class="title inline bold" style="color: #66BCED;">Puchen Zhu</h2>
-    <div class="social-media-icons">
-      <a href="about:blank"><img class="social-media-icon" src="data/icon-instagram.png"></a>
-      <a href="about:blank"><img class="social-media-icon" src="data/icon-linkedin.png"></a>
-      <a href="about:blank"><img class="social-media-icon" src="data/icon-twitter.png"></a>
-      <a href="about:blank"><img class="social-media-icon" src="data/icon-facebook.png"></a>
-    </div>
-    <ul class="nav inline bold">
-      <a href="about:blank"><li class="inline bold selected" style="color: #00D198;">Home</li></a>
-      <a href="about:blank"><li class="inline bold" style="color: #FF0098;">Travel</li></a>
-      <a href="about:blank"><li class="inline bold" style="color: #F5CD34">Food</li></a>
-    </ul>
+    <h2 class="header-title">
+      Puchen Zhu
+    </h2>
+    <ul class="header-social-media-icon-link-list">
+      <li class="header-social-media-icon-link-list-item">
+        <a href="about:blank">
+          <img class="header-social-media-icon" src="data/icon-instagram.png">
+        </a>
+      </li> <!-- header-social-media-icon-link-list-item -->
+      <li class="header-social-media-icon-link-list-item">
+        <a href="about:blank">
+          <img class="header-social-media-icon" src="data/icon-facebook.png">
+        </a>
+      </li> <!-- header-social-media-icon-link-list-item -->
+      <li class="header-social-media-icon-link-list-item">
+        <a href="about:blank">
+          <img class="header-social-media-icon" src="data/icon-twitter.png">
+        </a>
+      </li> <!-- header-social-media-icon-link-list-item -->
+      <li class="header-social-media-icon-link-list-item">
+        <a href="about:blank">
+          <img class="header-social-media-icon" src="data/icon-linkedin.png">
+        </a>
+      </li> <!-- header-social-media-icon-link-list-item -->
+    </ul> <!-- header-social-media-icon-link-list -->
+    <ul class="header-navigation-link-list">
+      <a href="about:blank">
+        <li class="header-navigation-link header-navigation-link-01 selected">
+          Home
+        </li> <!-- header-navigation-link -->
+      </a>
+      <a href="about:blank">
+        <li class="header-navigation-link header-navigation-link-02">
+          Travel
+        </li> <!-- header-navigation-link -->
+      </a>
+      <a href="about:blank">
+        <li class="header-navigation-link header-navigation-link-03">
+          Food
+        </li> <!-- header-navigation-link -->
+      </a>
+    </ul> <!-- header-navigation-link-list -->
   </header>
   <main>
-    <h1 class="title bold" id="title" style="width: auto; height: 55px; margin: auto;">Hello, world!</h1>
-    <div>
-      <p>This is some text. Blah, blah, blah.</p>
-      <p>Ok, I'm bored.</p>
-    </div>
+    <div class="main-title-container">
+      <h1 class="main-title" id="main-title">
+        Hello, world!
+      </h1>
+    </div> <!-- main-title-container -->
+    <div class="main-details-container">
+      <p>
+        This is some text. Blah, blah, blah.
+      </p>
+      <p>
+        Ok, I'm bored.
+      </p>
+    </div> <!-- main-details-container -->
   </main>
   <footer>
-    <p class="copyright">&copy; nf+xw 2016</p>
+    <p class="footer-copyright">
+      &copy; nf+xw 2016
+    </p> <!-- footer-copyright -->
   </footer>
   <!-- scripts -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="src/main.js"></script>
 </body>
 </html>

@@ -1,15 +1,21 @@
 $(document).ready(function () {
+
+  // fade in entire document
   $(document.body).fadeIn(800);
 
-  $("#title").hide().slideDown(1000);
+  // slide in main title
+  $("#main-title").hide().slideDown(1000);
 
-  $(".nav a").mouseover(function () {
-    $(this).children().css("border-bottom", "2px solid " + $(this).children().css("color"));
+  // underline navigation link with its color on mouseover
+  $(".header-navigation-link-list a").mouseover(function () {
+    const item = $(this).children();
+    item.css("border-bottom", "2px solid " + item.css("color"));
   });
 
-  $(".nav a").mouseout(function () {
-    if ($(this).children().hasClass("selected"))
-      return;
-    $(this).children().css("border-bottom", "none");
+  // remove navigation link underline on mouseout
+  $(".header-navigation-link-list a").mouseout(function () {
+    const item = $(this).children();
+    if (!item.hasClass("selected"))
+      item.css("border-bottom", "none");
   });
 });
