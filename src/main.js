@@ -31,8 +31,12 @@ $(document).ready(function () {
       details01: "This is some different text. Yada, yada, yada.",
       details02: "Well, I'm still bored.",
     },
+    {
+      title: "Oh, you're still here?",
+      details01: "I've got nothing else to say.",
+      details02: "&nbsp;",
+    }
   ];
-
 
   setInterval(function () {
     currentItem = (currentItem + 1) % showcase.length;
