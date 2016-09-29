@@ -19,38 +19,6 @@ $(document).ready(function () {
       item.css("border-bottom", "none");
   });
 
-  let currentItem = 0;
-  const showcase = [
-    {
-      title: "Hello, world!",
-      details01: "This is some text. Blah, blah, blah.",
-      details02: "Ok, I'm bored.",
-    },
-    {
-      title: "Goodbye, world!",
-      details01: "This is some different text. Yada, yada, yada.",
-      details02: "Well, I'm still bored.",
-    },
-    {
-      title: "Oh, you're still here?",
-      details01: "I've got nothing else to say.",
-      details02: "&nbsp;",
-    }
-  ];
-
-  setInterval(function () {
-    currentItem = (currentItem + 1) % showcase.length;
-    $("#main-title").fadeOut(function () {
-      $(this).html(showcase[currentItem].title);
-      $(this).fadeIn();
-      $("#main-details-01").fadeOut(function () {
-        $(this).html(showcase[currentItem].details01);
-        $(this).fadeIn();
-        $("#main-details-02").fadeOut(function () {
-          $(this).html(showcase[currentItem].details02);
-          $(this).fadeIn();
-        });
-      });
-    });
-  }, 5000);
+  // start playing the showcase
+  new Showcase("showcase").play();
 });

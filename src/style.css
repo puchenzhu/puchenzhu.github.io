@@ -106,17 +106,6 @@ main {
   transform: translateY(-50%);
 }
 
-.main-title {
-  font-weight: 600;
-  height: 50px;
-  margin: auto;
-  width: 500px;
-}
-
-.main-details p {
-  font-weight: 300;
-}
-
 footer {
   bottom: 10px;
   left: 0;

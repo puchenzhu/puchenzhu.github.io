@@ -1,0 +1,14 @@
+.showcase-title {
+  font-weight: 600;
+  height: 50px;
+  margin: auto;
+  width: 500px;
+}
+
+.showcase-subtext-a, .showcase-subtext-b {
+  font-weight: 300;
+}
+
+.showcase-set {
+  display: none;
+}
